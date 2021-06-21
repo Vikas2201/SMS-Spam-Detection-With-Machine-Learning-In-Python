@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="../static/style2.css">
+</head>
+<body>
+    <section>
+        <div class="side">
+            <img src="{{url_for('static', filename='vikas.jpeg')}}" width="350px" height="350px">
+            <h2>Project: SMS Spam Detection System</h2>
+            <h2>Using Machine Learning, Python, Flask</h2>
+
+            <h2>Made By Vikas(2019UMC4555)</h2>
+        </div>
+        <div class="vl"></div>
+        <div class="main results">
+            <h1>Machine Learning Prediction</h1>
+            {% if prediction == 1%}
+            <h2 style="color:red; font-size: x-large;">This looks like a Spam</h2>
+            <span style='font-size:100px;'>&#128545;</span>
+            {% elif prediction == 0%}
+            <h2 style="color:green; font-size: x-large;">This looks like a Ham</h2>
+            <span style='font-size:100px;'>&#128512;</span>
+
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>

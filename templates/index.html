@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection Project</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<section>
+    <div class="side">
+        <img src="{{url_for('static', filename='vikas.jpeg')}}" width="350px" height="350px">
+        <h2>Project: SMS Spam Detection System</h2>
+        <h2>Using Machine Learning, Python, Flask</h2>
+
+        <h2>Made By Vikas(2019UMC4555)</h2>
+    </div>
+    <div class="vl"></div>
+    <div class="main">
+            <h1>Machine Learning App with Flask</h1>
+            <p>Enter Your SMS For Prediction</p>
+            <form action="/predict" method="POST">
+                <br>
+                <br>
+                <textarea id="message" class="form-control" name="message" placeholder="Your text message goes here" rows="10" cols="50"></textarea>
+                <br>
+                <br>
+                    <input type="submit" class="btn-info" value="Predict">
+            </form>
+    </div>
+</section>
+</body>
+</html>
